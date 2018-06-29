@@ -128,12 +128,12 @@ class SupbookRecord extends WritableRecordData
     super(Type.SUPBOOK);
 
     workbookSettings = ws;
-    if (sr.getType() == sr.INTERNAL)
+    if (sr.getType() == jxl.read.biff.SupbookRecord.INTERNAL)
     {
       type = INTERNAL;
       numSheets = sr.getNumberOfSheets();
     }
-    else if (sr.getType() == sr.EXTERNAL)
+    else if (sr.getType() == jxl.read.biff.SupbookRecord.EXTERNAL)
     {
       type = EXTERNAL;
       numSheets = sr.getNumberOfSheets();
@@ -146,7 +146,7 @@ class SupbookRecord extends WritableRecordData
       }
     }
 
-    if (sr.getType() == sr.ADDIN)
+    if (sr.getType() == jxl.read.biff.SupbookRecord.ADDIN)
     {
       logger.warn("Supbook type is addin");
     }

@@ -64,7 +64,7 @@ abstract class ParseItem
     volatileFunction = false;
     alternateCode = false;
     valid = true;
-    parseContext = parseContext.DEFAULT;
+    parseContext = ParseContext.DEFAULT;
   }
 
   /**

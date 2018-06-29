@@ -289,14 +289,14 @@ public class WritableWorkbookImpl extends WritableWorkbook
       for (int i = 0; i < readsr.length; i++)
       {
         jxl.read.biff.SupbookRecord readSupbook = readsr[i];
-        if (readSupbook.getType() == readSupbook.INTERNAL ||
-            readSupbook.getType() == readSupbook.EXTERNAL)
+        if (readSupbook.getType() == jxl.read.biff.SupbookRecord.INTERNAL ||
+            readSupbook.getType() == jxl.read.biff.SupbookRecord.EXTERNAL)
         {
           supbooks.add(new SupbookRecord(readSupbook, settings));
         }
         else
         {
-          if (readSupbook.getType() != readSupbook.ADDIN)
+          if (readSupbook.getType() != jxl.read.biff.SupbookRecord.ADDIN)
           {
             logger.warn("unsupported supbook type - ignoring");
           }

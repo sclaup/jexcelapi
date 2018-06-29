@@ -412,7 +412,7 @@ public class ReadWrite
     sheet.addCell(label);
     b = new Blank(1,152);
     wcf = new WritableCellFeatures();
-    wcf.setNumberValidation(2.718, 3.142, wcf.BETWEEN);
+    wcf.setNumberValidation(2.718, 3.142, WritableCellFeatures.BETWEEN);
     b.setCellFeatures(wcf);
     sheet.addCell(b);
 
