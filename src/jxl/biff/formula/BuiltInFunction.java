@@ -22,7 +22,7 @@ package jxl.biff.formula;
 import java.util.Stack;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.WorkbookSettings;
 import jxl.biff.IntegerHelper;
@@ -35,7 +35,7 @@ class BuiltInFunction extends Operator implements ParsedThing
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(BuiltInFunction.class);
+  private static Logger logger = LoggerFactory.getLogger(BuiltInFunction.class);
 
   /**
    * The function

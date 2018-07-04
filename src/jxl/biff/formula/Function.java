@@ -19,7 +19,7 @@
 
 package jxl.biff.formula;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.WorkbookSettings;
 
@@ -31,7 +31,7 @@ final class Function
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(Function.class);
+  private static Logger logger = LoggerFactory.getLogger(Function.class);
 
   /**
    * The code which applies to this function

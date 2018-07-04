@@ -25,7 +25,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.read.biff.Record;
 import jxl.write.biff.File;
@@ -39,7 +39,7 @@ public class DrawingGroup implements EscherStream
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(DrawingGroup.class);
+  private static Logger logger = LoggerFactory.getLogger(DrawingGroup.class);
 
   /**
    * The escher data read in from file

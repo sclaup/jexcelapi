@@ -24,7 +24,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.Cell;
 import jxl.Range;
@@ -62,7 +62,7 @@ public class WorkbookParser extends Workbook
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(WorkbookParser.class);
+  private static Logger logger = LoggerFactory.getLogger(WorkbookParser.class);
 
   /**
    * The excel file

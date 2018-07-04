@@ -19,7 +19,7 @@
 
 package jxl.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.WorkbookSettings;
 
@@ -31,7 +31,7 @@ public class EncodedURLHelper
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(EncodedURLHelper.class);
+  private static Logger logger = LoggerFactory.getLogger(EncodedURLHelper.class);
 
   // The control codes
   private static byte msDosDriveLetter = 0x01;

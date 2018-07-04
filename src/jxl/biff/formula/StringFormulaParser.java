@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Stack;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.WorkbookSettings;
 import jxl.biff.WorkbookMethods;
@@ -38,7 +38,7 @@ class StringFormulaParser implements Parser
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(StringFormulaParser.class);
+  private static Logger logger = LoggerFactory.getLogger(StringFormulaParser.class);
 
   /**
    * The formula string passed to this object

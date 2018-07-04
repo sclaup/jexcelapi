@@ -20,7 +20,7 @@
 package jxl.biff;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import java.text.MessageFormat;
 import java.text.DecimalFormat;
@@ -42,7 +42,7 @@ public class DVParser
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(DVParser.class);
+  private static Logger logger = LoggerFactory.getLogger(DVParser.class);
 
   // DV Type
   public static class DVType 

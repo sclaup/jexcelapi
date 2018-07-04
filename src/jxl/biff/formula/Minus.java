@@ -19,7 +19,7 @@
 
 package jxl.biff.formula;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 /**
  * Ambiguously defined minus operator, used as a place holder when parsing
  * string formulas.  At this stage it could be either
@@ -29,7 +29,7 @@ import jxl.common.Logger;
 class Minus extends StringOperator
 {
 	// The logger
-  private static Logger logger = Logger.getLogger(StringOperator.class);
+  private static Logger logger = LoggerFactory.getLogger(StringOperator.class);
 
   /**
    * Constructor

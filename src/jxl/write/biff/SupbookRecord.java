@@ -20,7 +20,7 @@
 package jxl.write.biff;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.WorkbookSettings;
 import jxl.biff.EncodedURLHelper;
@@ -38,7 +38,7 @@ class SupbookRecord extends WritableRecordData
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(SupbookRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(SupbookRecord.class);
 
   /**
    * The type of this supbook record

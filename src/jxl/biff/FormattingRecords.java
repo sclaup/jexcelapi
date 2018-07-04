@@ -27,7 +27,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.format.Colour;
 import jxl.format.RGB;
@@ -41,7 +41,7 @@ public class FormattingRecords
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(FormattingRecords.class);
+  private static Logger logger = LoggerFactory.getLogger(FormattingRecords.class);
 
   /**
    * A hash map of FormatRecords, for random access retrieval when reading

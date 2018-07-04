@@ -21,7 +21,7 @@ package jxl.write.biff;
 
 import java.text.NumberFormat;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.NumberFormulaCell;
 import jxl.biff.DoubleHelper;
@@ -37,7 +37,7 @@ class ReadNumberFormulaRecord extends ReadFormulaRecord
   implements NumberFormulaCell
 {
   // The logger
-  private static Logger logger = Logger.getLogger(ReadNumberFormulaRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(ReadNumberFormulaRecord.class);
 
   /**
    * Constructor

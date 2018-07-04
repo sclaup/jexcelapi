@@ -170,7 +170,7 @@ public final class HeaderFooter extends jxl.biff.HeaderFooter
     /**
      * Sets the font of text subsequently appended to this
      * object.. Previously appended text is not affected.
-     * <p/>
+     * <p>
      * <strong>Note:</strong> no checking is performed to
      * determine if fontName is a valid font.
      *
@@ -184,7 +184,7 @@ public final class HeaderFooter extends jxl.biff.HeaderFooter
     /**
      * Sets the font size of text subsequently appended to this
      * object. Previously appended text is not affected.
-     * <p/>
+     * <p>
      * Valid point sizes are between 1 and 99 (inclusive). If
      * size is outside this range, this method returns false
      * and does not change font size. If size is within this
@@ -193,7 +193,7 @@ public final class HeaderFooter extends jxl.biff.HeaderFooter
      * @param size The size in points. Valid point sizes are
      * between 1 and 99 (inclusive).
      * @return true if the font size was changed, false if font
-     * size was not changed because 1 > size > 99.
+     * size was not changed because 1 &gt; size &gt; 99.
      */
     public boolean setFontSize(int size)
     {

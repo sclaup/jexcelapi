@@ -20,7 +20,7 @@
 package jxl.biff;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 /**
  * Contains the common data for a compound file
@@ -30,7 +30,7 @@ public abstract class BaseCompoundFile
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(BaseCompoundFile.class);
+  private static Logger logger = LoggerFactory.getLogger(BaseCompoundFile.class);
 
   /**
    * The identifier at the beginning of every OLE file

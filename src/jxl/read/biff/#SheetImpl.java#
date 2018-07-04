@@ -65,7 +65,7 @@ public class SheetImpl implements Sheet
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(SheetImpl.class);
+  private static Logger logger = LoggerFactory.getLogger(SheetImpl.class);
 
   /**
    * The excel file

@@ -19,7 +19,7 @@
 
 package jxl.biff.formula;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 /**
  * An cell reference error which occurs in a formula
@@ -29,7 +29,7 @@ class CellReferenceError extends Operand implements ParsedThing
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(CellReferenceError.class);
+  private static Logger logger = LoggerFactory.getLogger(CellReferenceError.class);
 
   /**
    * Constructor

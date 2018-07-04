@@ -26,7 +26,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.BaseCompoundFile;
 import jxl.biff.IntegerHelper;
@@ -49,7 +49,7 @@ final class CompoundFile extends BaseCompoundFile
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(CompoundFile.class);
+  private static Logger logger = LoggerFactory.getLogger(CompoundFile.class);
 
   /**
    * The stream to which the jumbled up data is written to
@@ -435,7 +435,7 @@ final class CompoundFile extends BaseCompoundFile
         }
         catch (BiffException e)
         {
-          logger.error(e);
+          logger.error("BiffException in readAdditionalPropertySets",e);
           throw new CopyAdditionalPropertySetsException();
         }
       }

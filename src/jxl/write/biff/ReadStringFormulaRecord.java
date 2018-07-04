@@ -20,7 +20,7 @@
 package jxl.write.biff;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.StringFormulaCell;
 import jxl.biff.FormulaData;
@@ -35,7 +35,7 @@ class ReadStringFormulaRecord extends ReadFormulaRecord
   implements StringFormulaCell
 {
   // the logger
-  private static Logger logger = Logger.getLogger(ReadFormulaRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(ReadFormulaRecord.class);
 
   /**
    * Constructor

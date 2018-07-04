@@ -19,7 +19,7 @@
 
 package jxl.read.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 import jxl.biff.IntegerHelper;
 import jxl.biff.RecordData;
 
@@ -31,7 +31,7 @@ class WindowProtectedRecord extends RecordData
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(WindowProtectedRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(WindowProtectedRecord.class);
 
   /**
    * The windowProtected mode

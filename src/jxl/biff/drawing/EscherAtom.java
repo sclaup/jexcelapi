@@ -19,7 +19,7 @@
 
 package jxl.biff.drawing;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 /**
  * Class for atoms.  This may be instantiated as is for unknown/uncared about
@@ -30,7 +30,7 @@ class EscherAtom extends EscherRecord
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(EscherAtom.class);
+  private static Logger logger = LoggerFactory.getLogger(EscherAtom.class);
 
   /**
    * Constructor

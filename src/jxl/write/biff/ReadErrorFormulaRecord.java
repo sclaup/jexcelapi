@@ -19,7 +19,7 @@
 
 package jxl.write.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.ErrorFormulaCell;
 import jxl.biff.FormulaData;
@@ -36,7 +36,7 @@ class ReadErrorFormulaRecord extends ReadFormulaRecord
   implements ErrorFormulaCell
 {
   // The logger
-  private static Logger logger = Logger.getLogger(ReadErrorFormulaRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(ReadErrorFormulaRecord.class);
 
   /**
    * Constructor

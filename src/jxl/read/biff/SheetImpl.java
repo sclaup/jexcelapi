@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.regex.Pattern;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 import jxl.common.Assert;
 
 import jxl.Cell;
@@ -65,7 +65,7 @@ public class SheetImpl implements Sheet
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(SheetImpl.class);
+  private static Logger logger = LoggerFactory.getLogger(SheetImpl.class);
 
   /**
    * The excel file

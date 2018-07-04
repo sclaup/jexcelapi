@@ -23,7 +23,7 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Locale;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.CountryCode;
 import jxl.biff.formula.FunctionNames;
@@ -39,7 +39,7 @@ public final class WorkbookSettings
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(WorkbookSettings.class);
+  private static Logger logger = LoggerFactory.getLogger(WorkbookSettings.class);
 
   /**
    * The amount of memory allocated to store the workbook data when
@@ -265,8 +265,6 @@ public final class WorkbookSettings
     // Initialize other properties from the system properties
     try
     {
-      boolean suppressWarnings = Boolean.getBoolean("jxl.nowarnings");
-      setSuppressWarnings(suppressWarnings);
       drawingsDisabled        = Boolean.getBoolean("jxl.nodrawings");
       namesDisabled           = Boolean.getBoolean("jxl.nonames");
       gcDisabled              = Boolean.getBoolean("jxl.nogc");
@@ -482,18 +480,6 @@ public final class WorkbookSettings
   public boolean getPropertySetsDisabled()
   {
     return propertySetsDisabled;
-  }
-
-  /**
-   * Accessor to set the suppress warnings flag.  Due to the change
-   * in logging in version 2.4, this will now set the warning
-   * behaviour across the JVM (depending on the type of logger used)
-   *
-   * @param w the flag
-   */
-  public void setSuppressWarnings(boolean w)
-  {
-    logger.setSuppressWarnings(w);
   }
 
   /**
@@ -738,7 +724,7 @@ public final class WorkbookSettings
    * this flag involves an assessment of the trade-offs between memory usage
    * and performance
    *
-   * @return TRUE if a temporary is file is used during writing, 
+   * @param temp TRUE if a temporary is file is used during writing, 
    * FALSE otherwise
    */
   public void setUseTemporaryFileDuringWrite(boolean temp)

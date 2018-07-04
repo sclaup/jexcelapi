@@ -22,7 +22,7 @@ package jxl.biff.formula;
 import java.util.Stack;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.Cell;
 import jxl.WorkbookSettings;
@@ -36,7 +36,7 @@ class TokenFormulaParser implements Parser
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(TokenFormulaParser.class);
+  private static Logger logger = LoggerFactory.getLogger(TokenFormulaParser.class);
 
   /**
    * The Excel ptgs

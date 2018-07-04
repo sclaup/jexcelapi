@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.Cell;
 import jxl.CellType;
@@ -44,7 +44,7 @@ class MergedCells
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(MergedCells.class);
+  private static Logger logger = LoggerFactory.getLogger(MergedCells.class);
 
   /**
    * The list of merged cells

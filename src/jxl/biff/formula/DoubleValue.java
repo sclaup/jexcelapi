@@ -19,7 +19,7 @@
 
 package jxl.biff.formula;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.DoubleHelper;
 
@@ -31,7 +31,7 @@ class DoubleValue extends NumberValue implements ParsedThing
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(DoubleValue.class);
+  private static Logger logger = LoggerFactory.getLogger(DoubleValue.class);
 
   /**
    * The value of this double in the formula
@@ -69,7 +69,7 @@ class DoubleValue extends NumberValue implements ParsedThing
     }
     catch (NumberFormatException e)
     {
-      logger.warn(e, e);
+      logger.warn(e.getMessage(), e);
       value = 0;
     }
   }

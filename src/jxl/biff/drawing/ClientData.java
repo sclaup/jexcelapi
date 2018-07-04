@@ -19,7 +19,7 @@
 
 package jxl.biff.drawing;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 /**
  * The client data
@@ -29,7 +29,7 @@ class ClientData extends EscherAtom
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(ClientData.class);
+  private static Logger logger = LoggerFactory.getLogger(ClientData.class);
 
   /**
    * The raw data

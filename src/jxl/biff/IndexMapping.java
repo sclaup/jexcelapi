@@ -19,7 +19,7 @@
 
 package jxl.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 /**
  * This class is a wrapper for a list of mappings between indices.
@@ -31,7 +31,7 @@ public final class IndexMapping
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(IndexMapping.class);
+  private static Logger logger = LoggerFactory.getLogger(IndexMapping.class);
 
   /**
    * The array of new indexes for an old one

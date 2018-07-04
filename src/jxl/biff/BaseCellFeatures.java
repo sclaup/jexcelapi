@@ -22,7 +22,7 @@ package jxl.biff;
 import java.util.Collection;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.CellReferenceHelper;
 import jxl.Range;
@@ -38,7 +38,7 @@ public class BaseCellFeatures
   /**
    * The logger
    */
-  public static Logger logger = Logger.getLogger(BaseCellFeatures.class);
+  public static Logger logger = LoggerFactory.getLogger(BaseCellFeatures.class);
 
   /**
    * The comment
@@ -372,7 +372,10 @@ public class BaseCellFeatures
   /**
    * The list of items to validate for this cell in the form of a cell range.
    *
-   * @param c the list of valid values
+   * @param col1 column 1
+   * @param r1 row 1
+   * @param col2 column 2
+   * @param r2 row 2
    */
   public void setDataValidationRange(int col1, int r1, int col2, int r2)
   {

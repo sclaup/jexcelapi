@@ -25,7 +25,7 @@ import java.util.Date;
 import java.util.TimeZone;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.CellFeatures;
 import jxl.CellType;
@@ -42,7 +42,7 @@ class DateRecord implements DateCell, CellFeaturesAccessor
   /**
    * The logger
    */
-  private static Logger logger  = Logger.getLogger(DateRecord.class);
+  private static Logger logger  = LoggerFactory.getLogger(DateRecord.class);
 
   /**
    * The date represented within this cell

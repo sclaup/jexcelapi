@@ -92,7 +92,7 @@ public final class PaperSize
 	/** US Letter 8.5 x 11" */
 	public static final PaperSize LETTER = new PaperSize(1);
 
-	/** Letter small 8.5" ﾗ 11" */
+	/** Letter small 8.5" x 11" */
 	public static final PaperSize LETTER_SMALL = new PaperSize(2);
 
 	/** Tabloid 11" x 17" */
@@ -167,168 +167,168 @@ public final class PaperSize
 	/** E 34" x 44" */
 	public static final PaperSize E = new PaperSize(26);
 
-	/** Envelope DL 110mm ﾗ 220mm */
+	/** Envelope DL 110mm x 220mm */
 	public static final PaperSize ENVELOPE_DL = new PaperSize(27);
 
-	/** Envelope C5 162mm ﾗ 229mm */
+	/** Envelope C5 162mm x 229mm */
 	public static final PaperSize ENVELOPE_C5 = new PaperSize(28);
 
-	/** Envelope C3 324mm ﾗ 458mm */
+	/** Envelope C3 324mm x 458mm */
 	public static final PaperSize ENVELOPE_C3 = new PaperSize(29);
 
-	/** Envelope C4 229mm ﾗ 324mm */
+	/** Envelope C4 229mm x 324mm */
 	public static final PaperSize ENVELOPE_C4 = new PaperSize(30);
 
-	/** Envelope C6 114mm ﾗ 162mm */
+	/** Envelope C6 114mm x 162mm */
 	public static final PaperSize ENVELOPE_C6 = new PaperSize(31);
 
-	/** Envelope C6/C5 114mm ﾗ 229mm */
+	/** Envelope C6/C5 114mm x 229mm */
 	public static final PaperSize ENVELOPE_C6_C5 = new PaperSize(32);
 
-	/** B4 (ISO) 250mm ﾗ 353mm */
+	/** B4 (ISO) 250mm x 353mm */
 	public static final PaperSize B4_ISO = new PaperSize(33);
 
-	/** B5 (ISO) 176mm ﾗ 250mm */
+	/** B5 (ISO) 176mm x 250mm */
 	public static final PaperSize B5_ISO = new PaperSize(34);
 
-	/** B6 (ISO) 125mm ﾗ 176mm */
+	/** B6 (ISO) 125mm x 176mm */
 	public static final PaperSize B6_ISO = new PaperSize(35);
 
-	/** Envelope Italy 110mm ﾗ 230mm */
+	/** Envelope Italy 110mm x 230mm */
 	public static final PaperSize ENVELOPE_ITALY = new PaperSize(36);
 
-	/** Envelope Monarch 3 7/8" ﾗ 7.5" */
+	/** Envelope Monarch 3 7/8" x 7.5" */
 	public static final PaperSize ENVELOPE_MONARCH = new PaperSize(37);
 
-	/** 6.75 Envelope 3 5/8" ﾗ 6.5" */
+	/** 6.75 Envelope 3 5/8" x 6.5" */
 	public static final PaperSize ENVELOPE_6_75 = new PaperSize(38);
 
-	/** US Standard Fanfold 14 7/8" ﾗ 11" */
+	/** US Standard Fanfold 14 7/8" x 11" */
 	public static final PaperSize US_FANFOLD = new PaperSize(39);
 
-	/** German Std. Fanfold 8.5" ﾗ 12" */
+	/** German Std. Fanfold 8.5" x 12" */
 	public static final PaperSize GERMAN_FANFOLD = new PaperSize(40);
 
-	/** German Legal Fanfold 8.5" ﾗ 13" */
+	/** German Legal Fanfold 8.5" x 13" */
 	public static final PaperSize GERMAN_LEGAL_FANFOLD = new PaperSize(41);
 
-	/** B4 (ISO) 250mm ﾗ 353mm */
+	/** B4 (ISO) 250mm x 353mm */
 	public static final PaperSize B4_ISO_2 = new PaperSize(42);
 
-	/** Japanese Postcard 100mm ﾗ 148mm */
+	/** Japanese Postcard 100mm x 148mm */
 	public static final PaperSize JAPANESE_POSTCARD = new PaperSize(43);
 
-	/** 9ﾗ11 9" ﾗ 11" */
+	/** 9x11 9" x 11" */
 	public static final PaperSize SIZE_9x11 = new PaperSize(44);
 
-	/** 10ﾗ11 10" ﾗ 11" */
+	/** 10x11 10" x 11" */
 	public static final PaperSize SIZE_10x11 = new PaperSize(45);
 
-	/** 15ﾗ11 15" ﾗ 11" */
+	/** 15x11 15" x 11" */
 	public static final PaperSize SIZE_15x11 = new PaperSize(46);
 
-	/** Envelope Invite 220mm ﾗ 220mm */
+	/** Envelope Invite 220mm x 220mm */
 	public static final PaperSize ENVELOPE_INVITE = new PaperSize(47);
 
 	/* 48 & 49 Undefined */
 
-	/** Letter Extra 9.5" ﾗ 12" */
+	/** Letter Extra 9.5" x 12" */
 	public static final PaperSize LETTER_EXTRA = new PaperSize(50);
 
-	/** Legal Extra 9.5" ﾗ 15" */
+	/** Legal Extra 9.5" x 15" */
 	public static final PaperSize LEGAL_EXTRA = new PaperSize(51);
 
-	/** Tabloid Extra 11 11/16" ﾗ 18" */
+	/** Tabloid Extra 11 11/16" x 18" */
 	public static final PaperSize TABLOID_EXTRA = new PaperSize(52);
 
-	/** A4 Extra 235mm ﾗ 322mm */
+	/** A4 Extra 235mm x 322mm */
 	public static final PaperSize A4_EXTRA = new PaperSize(53);
 
-	/** Letter Transverse 8.5" ﾗ 11" */
+	/** Letter Transverse 8.5" x 11" */
 	public static final PaperSize LETTER_TRANSVERSE = new PaperSize(54);
 
-	/** A4 Transverse 210mm ﾗ 297mm */
+	/** A4 Transverse 210mm x 297mm */
 	public static final PaperSize A4_TRANSVERSE = new PaperSize(55);
 
-	/** Letter Extra Transv. 9.5" ﾗ 12" */
+	/** Letter Extra Transv. 9.5" x 12" */
 	public static final PaperSize LETTER_EXTRA_TRANSVERSE = new PaperSize(56);
 
-	/** Super A/A4 227mm ﾗ 356mm */
+	/** Super A/A4 227mm x 356mm */
 	public static final PaperSize SUPER_A_A4 = new PaperSize(57);
 
-	/** Super B/A3 305mm ﾗ 487mm */
+	/** Super B/A3 305mm x 487mm */
 	public static final PaperSize SUPER_B_A3 = new PaperSize(58);
 
 	/** Letter Plus 8.5" x 12 11/16" */
 	public static final PaperSize LETTER_PLUS = new PaperSize(59);
 
-	/** A4 Plus 210mm ﾗ 330mm */
+	/** A4 Plus 210mm x 330mm */
 	public static final PaperSize A4_PLUS = new PaperSize(60);
 
-	/** A5 Transverse 148mm ﾗ 210mm */
+	/** A5 Transverse 148mm x 210mm */
 	public static final PaperSize A5_TRANSVERSE = new PaperSize(61);
 
-	/** B5 (JIS) Transverse 182mm ﾗ 257mm */
+	/** B5 (JIS) Transverse 182mm x 257mm */
 	public static final PaperSize B5_TRANSVERSE = new PaperSize(62);
 
-	/** A3 Extra 322mm ﾗ 445mm */
+	/** A3 Extra 322mm x 445mm */
 	public static final PaperSize A3_EXTRA = new PaperSize(63);
 
-	/** A5 Extra 174mm ﾗ 235mm */
+	/** A5 Extra 174mm x 235mm */
 	public static final PaperSize A5_EXTRA = new PaperSize(64);
 
-	/** B5 (ISO) Extra 201mm ﾗ 276mm */
+	/** B5 (ISO) Extra 201mm x 276mm */
 	public static final PaperSize B5_EXTRA = new PaperSize(65);
 
-	/** A2 420mm ﾗ 594mm */
+	/** A2 420mm x 594mm */
 	public static final PaperSize A2 = new PaperSize(66);
 
-	/** A3 Transverse 297mm ﾗ 420mm */
+	/** A3 Transverse 297mm x 420mm */
 	public static final PaperSize A3_TRANSVERSE = new PaperSize(67);
 
-	/** A3 Extra Transverse 322mm ﾗ 445mm */
+	/** A3 Extra Transverse 322mm x 445mm */
 	public static final PaperSize A3_EXTRA_TRANSVERSE = new PaperSize(68);
 
-	/** Dbl. Japanese Postcard 200mm ﾗ 148mm */
+	/** Dbl. Japanese Postcard 200mm x 148mm */
 	public static final PaperSize DOUBLE_JAPANESE_POSTCARD = new PaperSize(69);
 
-	/** A6 105mm ﾗ 148mm */
+	/** A6 105mm x 148mm */
 	public static final PaperSize A6 = new PaperSize(70);
 
 	/* 71 - 74 undefined */
 
-	/** Letter Rotated 11" ﾗ 8.5" */
+	/** Letter Rotated 11" x 8.5" */
 	public static final PaperSize LETTER_ROTATED = new PaperSize(75);
 
-	/** A3 Rotated 420mm ﾗ 297mm */
+	/** A3 Rotated 420mm x 297mm */
 	public static final PaperSize A3_ROTATED = new PaperSize(76);
 
-	/** A4 Rotated 297mm ﾗ 210mm */
+	/** A4 Rotated 297mm x 210mm */
 	public static final PaperSize A4_ROTATED = new PaperSize(77);
 
-	/** A5 Rotated 210mm ﾗ 148mm */
+	/** A5 Rotated 210mm x 148mm */
 	public static final PaperSize A5_ROTATED = new PaperSize(78);
 
-	/** B4 (JIS) Rotated 364mm ﾗ 257mm */
+	/** B4 (JIS) Rotated 364mm x 257mm */
 	public static final PaperSize B4_ROTATED = new PaperSize(79);
 
-	/** B5 (JIS) Rotated 257mm ﾗ 182mm */
+	/** B5 (JIS) Rotated 257mm x 182mm */
 	public static final PaperSize B5_ROTATED = new PaperSize(80);
 
-	/** Japanese Postcard Rot. 148mm ﾗ 100mm */
+	/** Japanese Postcard Rot. 148mm x 100mm */
 	public static final PaperSize JAPANESE_POSTCARD_ROTATED = new PaperSize(81);
 
-	/** Dbl. Jap. Postcard Rot. 148mm ﾗ 200mm */
+	/** Dbl. Jap. Postcard Rot. 148mm x 200mm */
 	public static final PaperSize DOUBLE_JAPANESE_POSTCARD_ROTATED = new PaperSize(82);
 
-	/** A6 Rotated 148mm ﾗ 105mm */
+	/** A6 Rotated 148mm x 105mm */
 	public static final PaperSize A6_ROTATED = new PaperSize(83);
 
 	/* 84 - 87 undefined */
 
-	/** B6 (JIS) 128mm ﾗ 182mm */
+	/** B6 (JIS) 128mm x 182mm */
 	public static final PaperSize B6 = new PaperSize(88);
 
-	/** B6 (JIS) Rotated 182mm ﾗ 128mm */
+	/** B6 (JIS) Rotated 182mm x 128mm */
 	public static final PaperSize B6_ROTATED = new PaperSize(89);
 }

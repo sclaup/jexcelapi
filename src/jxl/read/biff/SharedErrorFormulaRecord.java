@@ -19,7 +19,7 @@
 
 package jxl.read.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.CellType;
 import jxl.ErrorCell;
@@ -44,7 +44,7 @@ public class SharedErrorFormulaRecord extends BaseSharedFormulaRecord
    * The logger
    */
   private static Logger logger = 
-    Logger.getLogger(SharedErrorFormulaRecord.class);
+    LoggerFactory.getLogger(SharedErrorFormulaRecord.class);
 
   /**
    * The error code of this cell

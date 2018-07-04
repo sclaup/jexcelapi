@@ -19,7 +19,7 @@
 
 package jxl.biff.drawing;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 /**
  * A BStoreContainer escher record
@@ -29,7 +29,7 @@ class BStoreContainer extends EscherContainer
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(BStoreContainer.class);
+  private static Logger logger = LoggerFactory.getLogger(BStoreContainer.class);
 
   /**
    * The number of blips inside this container

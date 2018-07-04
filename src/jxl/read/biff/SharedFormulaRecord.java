@@ -22,7 +22,7 @@ package jxl.read.biff;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.Cell;
 import jxl.CellType;
@@ -39,7 +39,7 @@ class SharedFormulaRecord
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(SharedFormulaRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(SharedFormulaRecord.class);
 
   /**
    * The first row to which this shared formula applies

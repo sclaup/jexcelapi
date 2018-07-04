@@ -20,7 +20,7 @@
 package jxl.biff.drawing;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.WorkbookSettings;
 import jxl.biff.ByteData;
@@ -38,7 +38,7 @@ public class Chart implements ByteData, EscherStream
   /**
    * The logger
    */
-  private static final Logger logger = Logger.getLogger(Chart.class);
+  private static final Logger logger = LoggerFactory.getLogger(Chart.class);
 
   /**
    * The MsoDrawingRecord associated with the chart

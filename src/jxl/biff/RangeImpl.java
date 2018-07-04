@@ -19,7 +19,7 @@
 
 package jxl.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.Cell;
 import jxl.Range;
@@ -37,7 +37,7 @@ public class RangeImpl implements Range
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(RangeImpl.class);
+  private static Logger logger = LoggerFactory.getLogger(RangeImpl.class);
 
   /**
    * A handle to the workbook

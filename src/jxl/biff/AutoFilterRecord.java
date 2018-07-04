@@ -19,7 +19,7 @@
 
 package jxl.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.read.biff.Record;
 
@@ -29,7 +29,7 @@ import jxl.read.biff.Record;
 public class AutoFilterRecord extends WritableRecordData
 {
   // The logger
-  private static Logger logger = Logger.getLogger(AutoFilterRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(AutoFilterRecord.class);
 
   /**
    * The data

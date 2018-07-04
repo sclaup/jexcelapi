@@ -22,7 +22,7 @@ package jxl.biff.drawing;
 import java.io.IOException;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.WorkbookSettings;
 import jxl.biff.ContinueRecord;
@@ -39,7 +39,7 @@ public class Comment implements DrawingGroupObject
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(Comment.class);
+  private static Logger logger = LoggerFactory.getLogger(Comment.class);
 
   /**
    * The spContainer that was read in

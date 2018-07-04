@@ -22,7 +22,7 @@ package jxl.biff.drawing;
 import java.io.IOException;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.IntegerHelper;
 
@@ -34,7 +34,7 @@ class BlipStoreEntry extends EscherAtom
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(BlipStoreEntry.class);
+  private static Logger logger = LoggerFactory.getLogger(BlipStoreEntry.class);
 
   /**
    * The type of the blip

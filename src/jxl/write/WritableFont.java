@@ -256,7 +256,7 @@ public class WritableFont extends WritableFontRecord
    * Sets the point size for this font, if the font hasn't been initialized
    *
    * @param pointSize the point size
-   * @exception WriteException, if this font is already in use elsewhere
+   * @throws WriteException if this font is already in use elsewhere
    */
   public void setPointSize(int pointSize) throws WriteException
   {
@@ -267,7 +267,7 @@ public class WritableFont extends WritableFontRecord
    * Sets the bold style for this font, if the font hasn't been initialized
    *
    * @param boldStyle the bold style
-   * @exception WriteException, if this font is already in use elsewhere
+   * @throws WriteException if this font is already in use elsewhere
    */
   public void setBoldStyle(BoldStyle boldStyle) throws WriteException
   {
@@ -279,7 +279,7 @@ public class WritableFont extends WritableFontRecord
    * initialized
    *
    * @param italic the italic flag
-   * @exception WriteException, if this font is already in use elsewhere
+   * @throws WriteException if this font is already in use elsewhere
    */
   public void setItalic(boolean italic) throws WriteException
   {
@@ -291,7 +291,7 @@ public class WritableFont extends WritableFontRecord
    * initialized
    *
    * @param us the underline style
-   * @exception WriteException, if this font is already in use elsewhere
+   * @throws WriteException if this font is already in use elsewhere
    */
   public void setUnderlineStyle(UnderlineStyle us) throws WriteException
   {
@@ -303,7 +303,7 @@ public class WritableFont extends WritableFontRecord
    * initialized
    *
    * @param colour the colour
-   * @exception WriteException, if this font is already in use elsewhere
+   * @throws WriteException if this font is already in use elsewhere
    */
   public void setColour(Colour colour) throws WriteException
   {
@@ -315,7 +315,7 @@ public class WritableFont extends WritableFontRecord
    * if the font hasn't been initialized
    *
    * @param scriptStyle the colour
-   * @exception WriteException, if this font is already in use elsewhere
+   * @throws WriteException if this font is already in use elsewhere
    */
   public void setScriptStyle(ScriptStyle scriptStyle) throws WriteException
   {
@@ -336,8 +336,7 @@ public class WritableFont extends WritableFontRecord
    * Sets Accessor for the strike-out flag
    *
    * @param struckout TRUE if this is a struckout font
-   * @return the strike-out flag
-   * @exception WriteException, if this font is already in use elsewhere
+   * @throws WriteException if this font is already in use elsewhere
    */
   public void setStruckout(boolean struckout) throws WriteException
   {

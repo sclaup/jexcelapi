@@ -19,7 +19,7 @@
 
 package jxl.biff.drawing;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 /**
  * An Spgr container record in an escher stream
@@ -29,7 +29,7 @@ class SpgrContainer extends EscherContainer
   /**
    * The logger
    */
-  private static final Logger logger = Logger.getLogger(SpgrContainer.class);
+  private static final Logger logger = LoggerFactory.getLogger(SpgrContainer.class);
 
   /**
    * Constructor used when writing

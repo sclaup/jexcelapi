@@ -19,7 +19,7 @@
 
 package jxl.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 import jxl.read.biff.Record;
 
 /**
@@ -29,7 +29,7 @@ public class WorkspaceInformationRecord extends WritableRecordData
 {
   // the logger
   private static Logger logger = 
-    Logger.getLogger(WorkspaceInformationRecord.class);
+    LoggerFactory.getLogger(WorkspaceInformationRecord.class);
 
   /**
    * The options byte

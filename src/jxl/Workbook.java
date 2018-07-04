@@ -41,7 +41,7 @@ public abstract class Workbook
   /**
    * The current version of the software
    */
-  private static final String VERSION = "2.6.12";
+  private static final String VERSION = "2.6.12.1";
 
   /**
    * The constructor
@@ -75,7 +75,7 @@ public abstract class Workbook
    *
    * @param index the zero based index of the reQuired sheet
    * @return The sheet specified by the index
-   * @exception IndexOutOfBoundException when index refers to a non-existent
+   * @throws IndexOutOfBoundsException when index refers to a non-existent
    *            sheet
    */
   public abstract Sheet getSheet(int index)

@@ -158,7 +158,7 @@ public abstract class WritableWorkbook
    *
    * @param name the name of the new sheet
    * @param index the position for the new sheet within this workbook
-   * @param sheet the sheet (from another workbook) to merge into this one
+   * @param s the sheet (from another workbook) to merge into this one
    * @return the new sheet
    */
   public abstract WritableSheet importSheet(String name, int index, Sheet s);

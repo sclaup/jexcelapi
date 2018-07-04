@@ -249,7 +249,8 @@ public final class CellReferenceHelper
   /**
    * Gets the cell reference for the cell
    * 
-   * @param the cell
+   * @param c the cell
+   * @return reference of the cell specified
    */
   public static String getCellReference(Cell c)
   {

@@ -19,7 +19,7 @@
 
 package jxl.biff.formula;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import java.util.Stack;
 
@@ -29,7 +29,7 @@ import java.util.Stack;
 abstract class BinaryOperator extends Operator implements ParsedThing
 {
   // The logger
-  private static final Logger logger = Logger.getLogger(BinaryOperator.class);
+  private static final Logger logger = LoggerFactory.getLogger(BinaryOperator.class);
 
   /**
    * Constructor

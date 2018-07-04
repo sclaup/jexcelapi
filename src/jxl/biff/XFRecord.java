@@ -27,7 +27,7 @@ import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.WorkbookSettings;
 import jxl.format.Alignment;
@@ -50,7 +50,7 @@ public class XFRecord extends WritableRecordData implements CellFormat
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(XFRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(XFRecord.class);
 
   /**
    * The index to the format record

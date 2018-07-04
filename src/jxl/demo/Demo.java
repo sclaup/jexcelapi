@@ -23,7 +23,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.Cell;
 import jxl.Range;
@@ -42,7 +42,7 @@ public class Demo
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(Demo.class);
+  private static Logger logger = LoggerFactory.getLogger(Demo.class);
 
   /**
    * Displays the acceptable command line arguments
@@ -92,7 +92,6 @@ public class Demo
       logger.info("A sample \"info\" message");
       logger.warn("A sample \"warning\" message");
       logger.error("A sample \"error\" message");
-      logger.fatal("A sample \"fatal\" message");
       System.exit(0);
     }
 

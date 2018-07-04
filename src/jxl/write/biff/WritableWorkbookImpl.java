@@ -27,7 +27,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.Range;
 import jxl.Sheet;
@@ -65,7 +65,7 @@ public class WritableWorkbookImpl extends WritableWorkbook
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(WritableWorkbookImpl.class);
+  private static Logger logger = LoggerFactory.getLogger(WritableWorkbookImpl.class);
   /**
    * The list of formats available within this workbook
    */

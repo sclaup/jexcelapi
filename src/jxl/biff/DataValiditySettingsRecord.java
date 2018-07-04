@@ -20,7 +20,7 @@
 package jxl.biff;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.WorkbookSettings;
 import jxl.biff.WorkbookMethods;
@@ -38,7 +38,7 @@ public class DataValiditySettingsRecord extends WritableRecordData
    * The logger
    */
   private static Logger logger = 
-    Logger.getLogger(DataValiditySettingsRecord.class);
+    LoggerFactory.getLogger(DataValiditySettingsRecord.class);
 
   /**
    * The binary data

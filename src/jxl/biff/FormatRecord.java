@@ -24,7 +24,7 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.WorkbookSettings;
 import jxl.format.Format;
@@ -39,7 +39,7 @@ public class FormatRecord extends WritableRecordData
   /**
    * The logger
    */
-  public static Logger logger = Logger.getLogger(FormatRecord.class);
+  public static Logger logger = LoggerFactory.getLogger(FormatRecord.class);
 
   /**
    * Initialized flag

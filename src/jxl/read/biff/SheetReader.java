@@ -24,7 +24,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.Cell;
 import jxl.CellFeatures;
@@ -77,7 +77,7 @@ final class SheetReader
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(SheetReader.class);
+  private static Logger logger = LoggerFactory.getLogger(SheetReader.class);
 
   /**
    * The excel file

@@ -19,7 +19,7 @@
 
 package jxl.write.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.Type;
 import jxl.biff.WritableRecordData;
@@ -32,7 +32,7 @@ class ArbitraryRecord extends WritableRecordData
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(ArbitraryRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(ArbitraryRecord.class);
 
   /**
    * The binary data

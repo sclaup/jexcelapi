@@ -21,7 +21,7 @@ package jxl.biff;
 
 import java.io.UnsupportedEncodingException;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.WorkbookSettings;
 
@@ -34,7 +34,7 @@ public final class StringHelper
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(StringHelper.class);
+  private static Logger logger = LoggerFactory.getLogger(StringHelper.class);
 
   // Due to a a Sun bug in some versions of JVM 1.4, the UnicodeLittle
   // encoding doesn't always work.  Making this a public static field

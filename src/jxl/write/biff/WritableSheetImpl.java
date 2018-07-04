@@ -27,7 +27,7 @@ import java.util.TreeSet;
 import java.util.regex.Pattern;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.BooleanCell;
 import jxl.Cell;
@@ -91,7 +91,7 @@ class WritableSheetImpl implements WritableSheet
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(WritableSheetImpl.class);
+  private static Logger logger = LoggerFactory.getLogger(WritableSheetImpl.class);
     
   /**
    * The name of this sheet

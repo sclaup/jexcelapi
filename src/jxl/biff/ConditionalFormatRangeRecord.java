@@ -19,7 +19,7 @@
 
 package jxl.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.read.biff.Record;
 
@@ -30,7 +30,7 @@ public class ConditionalFormatRangeRecord extends WritableRecordData
 {
   // The logger
   private static Logger logger = 
-    Logger.getLogger(ConditionalFormatRangeRecord.class);
+    LoggerFactory.getLogger(ConditionalFormatRangeRecord.class);
 
   /**
    * The enclosing range

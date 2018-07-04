@@ -19,7 +19,7 @@
 
 package jxl.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.formula.ExternalSheet;
 
@@ -36,7 +36,7 @@ public final class CellReferenceHelper
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(CellReferenceHelper.class);
+  private static Logger logger = LoggerFactory.getLogger(CellReferenceHelper.class);
 
   /**
    * The character which indicates whether a reference is fixed
@@ -274,7 +274,7 @@ public final class CellReferenceHelper
     }
     catch (NumberFormatException e)
     {
-      logger.warn(e, e);
+      logger.warn(e.getMessage(), e);
       return 0xffff;
     }
   }

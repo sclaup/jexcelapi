@@ -19,7 +19,7 @@
 
 package jxl.biff.drawing;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.IntegerHelper;
 
@@ -31,7 +31,7 @@ class ClientAnchor extends EscherAtom
   /**
    * The logger
    */
-  private static final Logger logger = Logger.getLogger(ClientAnchor.class);
+  private static final Logger logger = LoggerFactory.getLogger(ClientAnchor.class);
 
   /**
    * The binary data

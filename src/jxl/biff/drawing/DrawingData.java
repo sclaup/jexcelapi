@@ -22,7 +22,7 @@ package jxl.biff.drawing;
 import java.util.ArrayList;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 /**
  * Class used to concatenate all the data for the various drawing objects
@@ -33,7 +33,7 @@ public class DrawingData implements EscherStream
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(DrawingData.class);
+  private static Logger logger = LoggerFactory.getLogger(DrawingData.class);
 
   /**
    * The drawing data

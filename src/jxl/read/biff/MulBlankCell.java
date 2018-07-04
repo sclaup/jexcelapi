@@ -19,7 +19,7 @@
 
 package jxl.read.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.Cell;
 import jxl.CellFeatures;
@@ -36,7 +36,7 @@ class MulBlankCell implements Cell, CellFeaturesAccessor
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(MulBlankCell.class);
+  private static Logger logger = LoggerFactory.getLogger(MulBlankCell.class);
 
   /**
    * The row containing this blank

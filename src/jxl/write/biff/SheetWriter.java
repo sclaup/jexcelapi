@@ -25,7 +25,7 @@ import java.util.Iterator;
 import java.util.TreeSet;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.Cell;
 import jxl.CellFeatures;
@@ -63,7 +63,7 @@ final class SheetWriter
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(SheetWriter.class);
+  private static Logger logger = LoggerFactory.getLogger(SheetWriter.class);
     
   /**
    * A handle to the output file which the binary data is written to

@@ -19,7 +19,7 @@
 
 package jxl.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 /**
  * Enumeration type for the excel country codes
@@ -29,7 +29,7 @@ public class CountryCode
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(CountryCode.class);
+  private static Logger logger = LoggerFactory.getLogger(CountryCode.class);
 
   /**
    * The country code

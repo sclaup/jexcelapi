@@ -21,7 +21,7 @@ package jxl.read.biff;
 
 import java.util.ArrayList;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.IntegerHelper;
 import jxl.biff.Type;
@@ -35,7 +35,7 @@ public final class Record
   /**
    * The logger
    */
-  private static final Logger logger = Logger.getLogger(Record.class);
+  private static final Logger logger = LoggerFactory.getLogger(Record.class);
 
   /**
    * The excel biff code

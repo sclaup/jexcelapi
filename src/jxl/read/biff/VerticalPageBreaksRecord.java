@@ -19,7 +19,7 @@
 
 package jxl.read.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.IntegerHelper;
 import jxl.biff.RecordData;
@@ -32,8 +32,7 @@ class VerticalPageBreaksRecord extends RecordData
   /**
    * The logger
    */
-  private final Logger logger = Logger.getLogger
-    (VerticalPageBreaksRecord.class);
+  private final Logger logger = LoggerFactory.getLogger(VerticalPageBreaksRecord.class);
 
   /**
    * The row page breaks

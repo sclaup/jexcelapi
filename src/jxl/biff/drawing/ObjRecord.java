@@ -20,7 +20,7 @@
 package jxl.biff.drawing;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.IntegerHelper;
 import jxl.biff.Type;
@@ -36,7 +36,7 @@ public class ObjRecord extends WritableRecordData
   /**
    * The logger
    */
-  private static final Logger logger = Logger.getLogger(ObjRecord.class);
+  private static final Logger logger = LoggerFactory.getLogger(ObjRecord.class);
 
   /**
    * The object type

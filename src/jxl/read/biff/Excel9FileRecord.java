@@ -19,7 +19,7 @@
 
 package jxl.read.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 import jxl.biff.RecordData;
 
 /**
@@ -30,7 +30,7 @@ class Excel9FileRecord extends RecordData
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(Excel9FileRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(Excel9FileRecord.class);
 
   /**
    * The template

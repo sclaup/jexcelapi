@@ -21,7 +21,7 @@ package jxl.biff.drawing;
 
 import java.util.ArrayList;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.IntegerHelper;
 
@@ -33,7 +33,7 @@ class Dgg extends EscherAtom
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(Dgg.class);
+  private static Logger logger = LoggerFactory.getLogger(Dgg.class);
 
   /**
    * The binary data

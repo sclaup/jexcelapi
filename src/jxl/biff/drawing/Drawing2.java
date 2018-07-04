@@ -23,7 +23,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.write.biff.File;
 
@@ -38,7 +38,7 @@ public class Drawing2 implements DrawingGroupObject
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(Drawing.class);
+  private static Logger logger = LoggerFactory.getLogger(Drawing.class);
 
   /**
    * The spContainer that was read in

@@ -19,7 +19,7 @@
 
 package jxl.read.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.WorkbookSettings;
 import jxl.biff.IntegerHelper;
@@ -34,7 +34,7 @@ public class ExternalSheetRecord extends RecordData
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(ExternalSheetRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(ExternalSheetRecord.class);
 
   /**
    * Dummy indicators for overloading the constructor

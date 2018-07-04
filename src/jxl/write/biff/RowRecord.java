@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.CellType;
 import jxl.SheetSettings;
@@ -46,7 +46,7 @@ class RowRecord extends WritableRecordData
   /**
    * The logger
    */
-  private static final Logger logger = Logger.getLogger(RowRecord.class);
+  private static final Logger logger = LoggerFactory.getLogger(RowRecord.class);
 
   /**
    * The binary data

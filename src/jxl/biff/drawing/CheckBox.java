@@ -22,7 +22,7 @@ package jxl.biff.drawing;
 import java.io.IOException;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.WorkbookSettings;
 import jxl.biff.ContinueRecord;
@@ -37,7 +37,7 @@ public class CheckBox implements DrawingGroupObject
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(CheckBox.class);
+  private static Logger logger = LoggerFactory.getLogger(CheckBox.class);
 
   /**
    * The spContainer that was read in

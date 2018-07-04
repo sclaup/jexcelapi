@@ -19,7 +19,7 @@
 
 package jxl.read.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.DoubleHelper;
 import jxl.biff.IntegerHelper;
@@ -32,7 +32,7 @@ import jxl.biff.Type;
 public class SetupRecord extends RecordData
 {
   // The logger
-  private static Logger logger = Logger.getLogger(SetupRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(SetupRecord.class);
 
   /**
    * The raw data

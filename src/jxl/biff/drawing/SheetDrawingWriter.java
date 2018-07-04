@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.WorkbookSettings;
 import jxl.biff.IntegerHelper;
@@ -38,7 +38,7 @@ public class SheetDrawingWriter
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(SheetDrawingWriter.class);
+  private static Logger logger = LoggerFactory.getLogger(SheetDrawingWriter.class);
 
   /**
    * The drawings on the sheet

@@ -48,7 +48,7 @@ final class CompoundFile extends BaseCompoundFile
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(CompoundFile.class);
+  private static Logger logger = LoggerFactory.getLogger(CompoundFile.class);
 
   /**
    * The stream to which the jumbled up data is written to

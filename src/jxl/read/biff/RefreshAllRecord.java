@@ -19,7 +19,7 @@
 
 package jxl.read.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 import jxl.biff.IntegerHelper;
 import jxl.biff.RecordData;
 
@@ -31,7 +31,7 @@ class RefreshAllRecord extends RecordData
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(RefreshAllRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(RefreshAllRecord.class);
 
   /**
    * The refresh all mode

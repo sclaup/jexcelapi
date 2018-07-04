@@ -27,7 +27,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.Cell;
 import jxl.CellReferenceHelper;
@@ -70,7 +70,7 @@ public class ReadWrite
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(ReadWrite.class);
+  private static Logger logger = LoggerFactory.getLogger(ReadWrite.class);
 
   /**
    * The spreadsheet to read in
@@ -91,7 +91,6 @@ public class ReadWrite
   {
     inputWorkbook = new File(input);
     outputWorkbook = new File(output);
-    logger.setSuppressWarnings(Boolean.getBoolean("jxl.nowarnings"));
     logger.info("Input file:  " + input);    
     logger.info("Output file:  " + output);
   }

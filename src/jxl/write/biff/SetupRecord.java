@@ -19,7 +19,7 @@
 
 package jxl.write.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.SheetSettings;
 import jxl.biff.DoubleHelper;
@@ -38,7 +38,7 @@ class SetupRecord extends WritableRecordData
   /**
    * The logger
    */
-  Logger logger = Logger.getLogger(SetupRecord.class);
+  Logger logger = LoggerFactory.getLogger(SetupRecord.class);
 
   /**
    * The binary data for output to file

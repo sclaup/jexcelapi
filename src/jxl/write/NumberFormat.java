@@ -48,23 +48,23 @@ public class NumberFormat extends NumberFormatRecord implements DisplayFormat
    * Constant format string for the Euro currency symbol where it precedes
    * the format
    */
-  public static final String CURRENCY_EURO_PREFIX = "[$�-2]";
+  public static final String CURRENCY_EURO_PREFIX = "[$\u20AC-2]";
 
   /**
    * Constant format string for the Euro currency symbol where it precedes
    * the format
    */
-  public static final String CURRENCY_EURO_SUFFIX = "[$�-1]";
+  public static final String CURRENCY_EURO_SUFFIX = "[$\u20AC-1]";
 
   /**
    * Constant format string for the UK pound sign
    */
-  public static final String CURRENCY_POUND = "｣";
+  public static final String CURRENCY_POUND = "\u00A3";
 
   /**
    * Constant format string for the Japanese Yen sign
    */
-  public static final String CURRENCY_JAPANESE_YEN = "[$･-411]";
+  public static final String CURRENCY_JAPANESE_YEN = "[$\u00A5-411]";
 
   /**
    * Constant format string for the US Dollar sign

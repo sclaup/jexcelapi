@@ -107,7 +107,8 @@ public interface Image
   /**
    * Gets the horizontal resolution of the image, if that information
    * is available.
-   *
+   * 
+   * @param unit unit of length
    * @return the number of dots per unit specified, if available, 0 otherwise
    */
   public double getHorizontalResolution(LengthUnit unit);
@@ -116,6 +117,7 @@ public interface Image
    * Gets the vertical resolution of the image, if that information
    * is available.
    *
+   * @param unit unit of length
    * @return the number of dots per unit specified, if available, 0 otherwise
    */
   public double getVerticalResolution(LengthUnit unit);

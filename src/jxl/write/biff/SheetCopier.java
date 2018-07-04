@@ -26,7 +26,7 @@ import java.util.TreeSet;
 import java.util.Iterator;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.BooleanCell;
 import jxl.Cell;
@@ -84,7 +84,7 @@ import jxl.write.WriteException;
  */
 class SheetCopier
 {
-  private static Logger logger = Logger.getLogger(SheetCopier.class);
+  private static Logger logger = LoggerFactory.getLogger(SheetCopier.class);
 
   private SheetImpl fromSheet;
   private WritableSheetImpl toSheet;

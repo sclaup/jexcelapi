@@ -134,7 +134,7 @@ public class CellXFRecord extends XFRecord
   /**
    * Sets the shrink to fit flag
    *
-   * @param b the shrink to fit flag
+   * @param s the shrink to fit flag
    */
   public void setShrinkToFit(boolean s) throws WriteException
   {
@@ -200,9 +200,10 @@ public class CellXFRecord extends XFRecord
   /**
    * Sets the border style for cells with this format
    * 
-   * @exception WriteException 
    * @param b the border
    * @param ls the line for the specified border
+   * @param c the color for the specified border
+   * @throws WriteException 
    */
   public void setBorder(Border b, BorderLineStyle ls, Colour c) 
     throws WriteException

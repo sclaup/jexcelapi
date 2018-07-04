@@ -22,7 +22,7 @@ package jxl.read.biff;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.WorkbookSettings;
 import jxl.biff.BaseCompoundFile;
@@ -37,7 +37,7 @@ public final class CompoundFile extends BaseCompoundFile
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(CompoundFile.class);
+  private static Logger logger = LoggerFactory.getLogger(CompoundFile.class);
 
   /**
    * The original OLE stream, organized into blocks, which can

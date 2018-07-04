@@ -20,7 +20,7 @@
 package jxl.read.biff;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.BooleanCell;
 import jxl.BooleanFormulaCell;
@@ -44,7 +44,7 @@ public class SharedBooleanFormulaRecord extends BaseSharedFormulaRecord
    * The logger
    */
   private static Logger logger = 
-    Logger.getLogger(SharedBooleanFormulaRecord.class);
+    LoggerFactory.getLogger(SharedBooleanFormulaRecord.class);
 
   /**
    * The boolean value of this cell.  If this cell represents an error,

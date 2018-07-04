@@ -19,7 +19,7 @@
 
 package jxl.read.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.RecordData;
 
@@ -32,7 +32,7 @@ public class ButtonPropertySetRecord extends RecordData
    * The logger
    */
   private static Logger logger =
-    Logger.getLogger(ButtonPropertySetRecord.class);
+    LoggerFactory.getLogger(ButtonPropertySetRecord.class);
 
 
   /**

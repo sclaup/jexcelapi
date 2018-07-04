@@ -19,7 +19,7 @@
 
 package jxl.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.read.biff.Record;
 
@@ -33,7 +33,7 @@ public abstract class WritableRecordData extends RecordData
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(WritableRecordData.class);
+  private static Logger logger = LoggerFactory.getLogger(WritableRecordData.class);
   /**
    * The maximum length allowed by Excel for any record length
    */

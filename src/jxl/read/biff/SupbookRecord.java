@@ -19,7 +19,7 @@
 
 package jxl.read.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.WorkbookSettings;
 import jxl.biff.IntegerHelper;
@@ -35,7 +35,7 @@ public class SupbookRecord extends RecordData
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(SupbookRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(SupbookRecord.class);
 
   /**
    * The type of this supbook record

@@ -24,7 +24,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InterruptedIOException;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.WorkbookSettings;
 import jxl.biff.BaseCompoundFile;
@@ -39,7 +39,7 @@ public class File
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(File.class);
+  private static Logger logger = LoggerFactory.getLogger(File.class);
 
   /**
    * The data from the excel 97 file

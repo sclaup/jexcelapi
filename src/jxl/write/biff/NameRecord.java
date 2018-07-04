@@ -19,7 +19,7 @@
 
 package jxl.write.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.BuiltInName;
 import jxl.biff.IntegerHelper;
@@ -34,7 +34,7 @@ import jxl.biff.WritableRecordData;
 class NameRecord extends WritableRecordData
 {
   // The logger
-  private static Logger logger = Logger.getLogger(NameRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(NameRecord.class);
   /**
    * The binary data for output to file
    */

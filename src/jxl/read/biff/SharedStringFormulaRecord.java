@@ -20,7 +20,7 @@
 package jxl.read.biff;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.CellType;
 import jxl.LabelCell;
@@ -46,8 +46,7 @@ public class SharedStringFormulaRecord extends BaseSharedFormulaRecord
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger
-    (SharedStringFormulaRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(SharedStringFormulaRecord.class);
 
   /**
    * The value of this string formula

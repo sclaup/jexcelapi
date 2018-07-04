@@ -19,7 +19,7 @@
 
 package jxl.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.IntegerHelper;
 
@@ -32,7 +32,7 @@ public class DValParser
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(DValParser.class);
+  private static Logger logger = LoggerFactory.getLogger(DValParser.class);
 
   // The option masks
   private static int PROMPT_BOX_VISIBLE_MASK = 0x1;

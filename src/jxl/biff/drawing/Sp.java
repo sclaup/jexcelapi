@@ -19,7 +19,7 @@
 
 package jxl.biff.drawing;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.IntegerHelper;
 
@@ -31,7 +31,7 @@ class Sp extends EscherAtom
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(Sp.class);
+  private static Logger logger = LoggerFactory.getLogger(Sp.class);
 
   /**
    * The binary data

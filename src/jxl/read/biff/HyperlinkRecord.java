@@ -23,7 +23,7 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.CellReferenceHelper;
 import jxl.Hyperlink;
@@ -44,7 +44,7 @@ public class HyperlinkRecord extends RecordData implements Hyperlink
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(HyperlinkRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(HyperlinkRecord.class);
 
   /**
    * The first row
@@ -224,7 +224,7 @@ public class HyperlinkRecord extends RecordData implements Hyperlink
         CellReferenceHelper.getCellReference(lastColumn, lastRow, sb2);
         sb1.insert(0, "Exception when parsing URL ");
         sb1.append('\"').append(sb2.toString()).append("\".  Using default.");
-        logger.warn(sb1, e);
+        logger.warn(sb1.toString(), e);
 
         // Set a default URL
         try

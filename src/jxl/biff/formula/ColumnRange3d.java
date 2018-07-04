@@ -20,7 +20,7 @@
 package jxl.biff.formula;
 
 import jxl.common.Assert;
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.CellReferenceHelper;
 
@@ -32,7 +32,7 @@ class ColumnRange3d extends Area3d
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(ColumnRange3d.class);
+  private static Logger logger = LoggerFactory.getLogger(ColumnRange3d.class);
 
   /**
    * A handle to the workbook

@@ -19,7 +19,7 @@
 
 package jxl.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 import jxl.read.biff.Record;
 
 /**
@@ -27,8 +27,7 @@ import jxl.read.biff.Record;
  */
 public class DataValidityListRecord extends WritableRecordData
 {
-  private static Logger logger = Logger.getLogger
-    (DataValidityListRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(DataValidityListRecord.class);
 
   /**
    * The number of settings records associated with this list

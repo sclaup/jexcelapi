@@ -42,7 +42,7 @@ public interface WritableSheet extends Sheet
    * class of RowsExceededException
    *
    * @param cell the cell to add
-   * @exception jxl.write..WriteException
+   * @exception jxl.write.WriteException
    * @exception jxl.write.biff.RowsExceededException
    */
   public void addCell(WritableCell cell)
@@ -211,7 +211,7 @@ public interface WritableSheet extends Sheet
    * @param col2 the column number of the bottom right cell
    * @param row2 the row number of the bottom right cell
    * @return the Range object representing the merged cells
-   * @exception jxl.write..WriteException
+   * @exception jxl.write.WriteException
    * @exception jxl.write.biff.RowsExceededException
    */
   public Range mergeCells(int col1, int row1, int col2, int row2)
@@ -279,7 +279,7 @@ public interface WritableSheet extends Sheet
    * handle this.
    *
    * @param h the hyperlink
-   * @exception jxl.write..WriteException
+   * @exception jxl.write.WriteException
    * @exception jxl.write.biff.RowsExceededException
    */
   public void addHyperlink(WritableHyperlink h)

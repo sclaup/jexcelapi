@@ -19,7 +19,7 @@
 
 package jxl.read.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.Cell;
 import jxl.CellFeatures;
@@ -38,7 +38,7 @@ public abstract class CellValue extends RecordData
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(CellValue.class);
+  private static Logger logger = LoggerFactory.getLogger(CellValue.class);
 
   /**
    * The row number of this cell record

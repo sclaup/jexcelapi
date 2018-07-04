@@ -19,7 +19,7 @@
 
 package jxl.write.biff;
 
-import jxl.common.Logger;
+import org.slf4j.Logger; import org.slf4j.LoggerFactory;
 
 import jxl.biff.FormatRecord;
 
@@ -31,7 +31,7 @@ public class NumberFormatRecord extends FormatRecord
   /**
    * The logger
    */
-  private static Logger logger = Logger.getLogger(NumberFormatRecord.class);
+  private static Logger logger = LoggerFactory.getLogger(NumberFormatRecord.class);
 
   // Dummy class to specify non validation
   protected static class NonValidatingFormat{public NonValidatingFormat(){}};
