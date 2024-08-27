@@ -1,20 +1,20 @@
 <project name="JExcelApi" default="jxl">
  
-  <property name="jarFile" value="../jxl-2.6.12.2.jar" />
-  <property name="manifestFile" value="jxl.mf" />
-  <property name="outputDir" value="out" />
-  <property name="docsDir" value="../docs" />
-  <property name="sourceDir" value="../src" />
-  <property name="resourcesDir" value="../resources" />
+  <property name="jarFile" value="${basedir}/jxl-2.6.12.3.jar" />
+  <property name="manifestFile" value="${basedir}/build/jxl.mf" />
+  <property name="outputDir" value="${basedir}/out" />
+  <property name="docsDir" value="${basedir}/docs" />
+  <property name="sourceDir" value="${basedir}/src" />
+  <property name="resourcesDir" value="${basedir}/resources" />
   <property name="xllexfile" value="xlformula.lex" />
   <property name="jflexfile" value="xlformula.flex" />
   <property name="genlextargetfile" 
-            value="../src/jxl/biff/formula/Yylex.java" />
-  <property name="slf4jClasspath" value="../lib/slf4j-api-1.7.30.jar" />
+            value="${basedir}/src/jxl/biff/formula/Yylex.java" />
+  <property name="slf4jClasspath" value="${basedir}/lib/slf4j-api-2.0.12.jar" />
   <property file="build.properties" />
 
   <path id="project.class.path">
-    <pathelement location="./"/>
+    <pathelement location="${basedir}/build/"/>
     <pathelement path="${slf4jClasspath}"/>
   </path>	
 	
@@ -40,17 +40,20 @@
       <arg value="--jlex" />
       <arg value="--nobak" />
       <arg value="${jflexfile}" />
-      <classpath path="JFlex.jar" />
+      <classpath path="${basedir}\build\JFlex.jar" />
     </java>
-    <copy file="Yylex.java" tofile="${genlextargetfile}" />
+    <copy file="${basedir}\build\Yylex.java" tofile="${genlextargetfile}" />
   </target>
 
  
   <target name="jxl" depends="init, xljflex">
     <javac destdir="${outputDir}" 
-           srcdir="${sourceDir}"
-           debug="true" 
-           deprecation="on">
+			srcdir="${sourceDir}"
+			debug="true" 
+			deprecation="on"
+	    	source="1.8"
+	    	target="1.8"
+			includeantruntime="false">
         <classpath refid="project.class.path"/>
       <include name="jxl/*.java" />
       <include name="jxl/biff/**" />
@@ -79,7 +82,6 @@
              destdir="${docsDir}"
              public="true"
              nodeprecated="false">
-      <classpath refid="project.class.path"/>
       <package name="jxl" />
       <package name="jxl.write" />
       <package name="jxl.format" />

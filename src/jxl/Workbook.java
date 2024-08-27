@@ -41,7 +41,7 @@ public abstract class Workbook
   /**
    * The current version of the software
    */
-  private static final String VERSION = "2.6.12.2";
+  private static final String VERSION = "2.6.12.3";
 
   /**
    * The constructor
