@@ -82,6 +82,7 @@
              destdir="${docsDir}"
              public="true"
              nodeprecated="false">
+      <classpath refid="project.class.path"/>
       <package name="jxl" />
       <package name="jxl.write" />
       <package name="jxl.format" />
