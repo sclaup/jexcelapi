@@ -1,6 +1,6 @@
 <project name="JExcelApi" default="jxl">
  
-  <property name="jarFile" value="${basedir}/jxl-2.6.12.3.jar" />
+  <property name="jarFile" value="${basedir}/jxl-2.6.12.4.jar" />
   <property name="manifestFile" value="${basedir}/build/jxl.mf" />
   <property name="outputDir" value="${basedir}/out" />
   <property name="docsDir" value="${basedir}/docs" />
@@ -10,7 +10,7 @@
   <property name="jflexfile" value="xlformula.flex" />
   <property name="genlextargetfile" 
             value="${basedir}/src/jxl/biff/formula/Yylex.java" />
-  <property name="slf4jClasspath" value="${basedir}/lib/slf4j-api-2.0.12.jar" />
+  <property name="slf4jClasspath" value="${basedir}/lib/slf4j-api-2.0.16.jar" />
   <property file="build.properties" />
 
   <path id="project.class.path">
